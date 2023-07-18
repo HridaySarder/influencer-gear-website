@@ -22,6 +22,7 @@ nav li {
 }
 .banner-container {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   margin-left: 120px;
   margin-right: 120px;
@@ -47,7 +48,31 @@ nav li {
   border: none;
 }
 .banner-img img {
-  width: 400px;
+  width: 370px;
+  height: 350px;
+  margin-top: 20px;
   /* height: 414px; */
   background-image: url("/images/Circle\ design.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sponser-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  gap: 60px;
+  margin: 0px auto;
+  margin-top: 110px;
+  background: #FFF;
+}
+
+@media screen and (max-width:576px) {
+  .nav-container
+  {
+    flex-direction: column;
+  }
+  .banner-container{
+    flex-direction: column-reverse;
+  }
 }
